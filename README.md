@@ -3,7 +3,7 @@
 Create fully static, including rootfs embedded, binaries that pop you directly
 into a container. Can be run by an unprivileged user.
 
-This is based off a crazy idea from [@crosbymichael](https://github.com/crosbymichael] who first embedded an image in a binary :D
+This is based off a crazy idea from [@crosbymichael](https://github.com/crosbymichael) who first embedded an image in a binary :D
 
 ### Building
 
