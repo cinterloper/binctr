@@ -33,14 +33,14 @@ $ make static IMAGE=nginx
 Static container created at: ./bin/nginx
 Run with ./bin/nginx
 
-$ ./bin/nginx nginx -g daemon off
+$ ./bin/nginx nginx -g "daemon off;"
 
 # But we have no networking! Don't worry we can fix this
 # Let's install my super cool binary for setting up networking in a container
 $ go get github.com/jfrazelle/netns
 
 # now we can all this as a prestart hook
-$ ./bin/nginx --hook prestart:netns nginx -g daemon off
+$ ./bin/nginx --hook prestart:netns nginx -g "daemon off;"
 
 # let's get the ip file
 $ cat .ip
