@@ -39,7 +39,7 @@ $ ./bin/nginx nginx -g "daemon off;"
 # Let's install my super cool binary for setting up networking in a container
 $ go get github.com/jfrazelle/netns
 
-# now we can all this as a prestart hook
+# now we can add this as a prestart hook
 $ ./bin/nginx --hook prestart:netns nginx -g "daemon off;"
 
 # let's get the ip file
